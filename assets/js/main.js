@@ -1,10 +1,4 @@
-/**
-* Template Name: Lonely
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
