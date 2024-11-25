@@ -331,7 +331,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/cover1.png") top center;
+  background: url("../img/new_cover.png") top center;
   background-size: cover;
   padding: 0 15px;
 }
@@ -341,15 +341,19 @@ h6 {
   font-size: 50px;
   font-weight: 800;
   line-height: 56px;
-  color: #ECB365;
+  padding: 15px;
+  background-color: #2c2e30;
+  color: #ffb942;
 }
 
 #hero h2 {
-  color: #c1914f;
+  color: #ffb942;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #2c2e30;
+  padding: 15px;
 }
 
 #hero .btn-get-started {
