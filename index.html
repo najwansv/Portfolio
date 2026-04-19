@@ -1,679 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Najwan Sulvadli — AI & IoT Engineer</title>
+  <meta name="description" content="Portfolio of Muhammad Najwan Sulvadli — AI Engineer, IoT Specialist, and Systems Architect.">
 
-  <title>Muhammad Najwan Sulvadli portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <!-- Favicon -->
   <link href="assets/img/profile.png" rel="icon">
   <link href="assets/img/profile.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
-  
-  <!-- Linked in Badge -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- LinkedIn Badge -->
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>Hi!, I'm Najwan Sulvadli!</h1>
-    <h2> Final-year Information Technology Student<br>School of Science & Technology<br>Asia e University</h2>
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
-  </section><!-- End Hero -->
+  <!-- Cursor Glow -->
+  <div id="cursor-glow"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
+  <!-- ======= Header / Navbar ======= -->
+  <header id="header">
+    <div class="container">
       <div class="logo">
-        <h1><a class="nav-link scrollto" href="#hero">NSV</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1><a href="#hero">NSV</a></h1>
       </div>
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#awards">Awards</a></li>
           <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section id="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Available for Opportunities
+    </div>
+
+    <h1>Muhammad <span class="highlight">Najwan</span><br>Sulvadli</h1>
+
+    <p class="hero-subtitle">AI Engineer · IoT Specialist · Systems Architect</p>
+    <p><span id="typed-text"></span><span id="typed-cursor"></span></p>
+
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn-primary-glass scrollto">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        View My Work
+      </a>
+      <a href="#contact" class="btn-secondary-glass scrollto">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Get in Touch
+      </a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- ======= About ======= -->
     <section id="about" class="about">
       <div class="container">
+        <div class="section-title reveal">
+          <span class="overline">About Me</span>
+          <h2>Building the <span>Future</span> of Technology</h2>
+        </div>
 
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
+        <div class="row align-items-center g-5">
+          <div class="col-xl-5 reveal">
+            <div class="about-image">
+              <img src="assets/img/IdCard Najwan.png" alt="Muhammad Najwan Sulvadli">
+            </div>
+          </div>
+
+          <div class="col-xl-7 reveal reveal-delay-2">
+            <div class="about-content">
               <h3>Muhammad Najwan Sulvadli</h3>
-              <p>
-                I'm Muhammad Najwan Sulvadli. I am a graduate of Asia e University with a Bachelor's degree in Information Communication & Technology, and I also graduated from CCIT Faculty of Engineering, University of Indonesia, specializing in Internet Based System Automation (GPA 3.83).
+              <div class="about-role">End to End AI Engineer &amp; Data Analyst</div>
 
-                Currently, I work as an IoT Engineer at Kalimantan Prima Persada. My experience covers IoT, artificial intelligence, electrical wiring, mobile development, web development, and networking (Cisco Networking Academy).</p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
+              <p>A versatile Technology Engineer and Systems Architect specializing in the intersection of Artificial Intelligence, IoT, and Data Engineering. With a strong foundation in both hardware integration and full-stack software development, I transform complex operational challenges into streamlined, automated solutions.</p>
+
+              <p>I bring a unique blend of academic excellence and hands-on experience deploying robust, scalable technologies for high-stakes industries including mining, construction, and telecommunications.</p>
+
+              <div class="about-stats">
+                <div class="stat-card">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Years Exp.</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">
                     <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Awards</strong></p>
                   </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong></p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Years of experience</strong></p>
-                  </div>
+                  <div class="stat-label">Award</div>
                 </div>
               </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <section id="awards" class="awards section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Awards</h2>
-        </div>
-
-        <div class="row">
-          <div>
-            <h3 class="awards-title">Best Graduate</h3>
-            <div class="awards-item">
-              <p><em>Proudly recognized as the Best Graduate in TI Internet-based System Automation at Universitas Indonesia, with a high-quality performance CWAP score of 3.83 (out of 4). This achievement reflects my dedication and proficiency in the field, and my ability to excel in challenging academic environments. I am confident in applying my knowledge and skills to real-world projects and contributing to innovative solutions in the field of internet-based system automation.</em></p>
-                <h4>Timestamp</h4>  
-              <ul>
-                  <li><a href="javascript:void(0);" onclick="setCurrentTime(0)">1:56:10 Best Graduate in TI - Internet-based System Automation</a></li>
-                  <li><a href="javascript:void(0);" onclick="setCurrentTime(1)">2:29:56 Speech by best of the best graduates</a></li>
-                </ul>
-                <div class="row">
-                  <div class="col-lg-6"><div class="iframe" id="player"></div></div>
-                    <script>
-                      var tag = document.createElement('script');
-                      tag.src = "https://www.youtube.com/iframe_api";
-                      var firstScriptTag = document.getElementsByTagName('script')[0];
-                      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                      var player;
-                      function onYouTubeIframeAPIReady() {
-                        player = new YT.Player('player', {
-                          height : '390',
-                          width : '640',
-                          videoId: 'dOU-ifVxgP4',
-                        });
-                      }
-                      function setCurrentTime(slideNum) {
-                        var object = [ 6960, 8994 ];
-                        player.seekTo(object[slideNum]);
-                      }
-                    </script>
-                  <img class="col-lg-6" src="assets/img/Certificate Best Graduate Muhammad Najwan Sulvadli.png" alt="">
-                </div>
             </div>
-            
+          </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <!-- <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kotlin-Android <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">C++ <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Arduino <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Vegas Pro <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+    <!-- ======= Skills Strip ======= -->
+    <div class="skills-strip reveal">
+      <h3>Technical Stack</h3>
+      <div class="skills-track">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">IoT / ESP32</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Ultralytics YOLO</span>
+        <span class="skill-tag">HuggingFace</span>
+        <span class="skill-tag">Azure DevOps</span>
+        <span class="skill-tag">Databricks</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Kotlin</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Nvidia Jetson</span>
+        <span class="skill-tag">Raspberry Pi</span>
+        <span class="skill-tag">Arduino</span>
+        <span class="skill-tag">Cisco Packet Tracer</span>
+        <span class="skill-tag">Android Dev</span>
       </div>
-    </section>End Skills Section -->
+    </div>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume section-bg">
+    <!-- ======= Awards ======= -->
+    <section id="awards" class="awards">
       <div class="container">
-
-        <div class="section-title">
-          <h2>CV - Resume</h2>
+        <div class="section-title reveal">
+          <span class="overline">Recognition</span>
+          <h2>Awards &amp; <span>Achievements</span></h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Muhammad Najwan Sulvadli</h4>
-              <p><em>Highly motivated and results-oriented final year Bachelor of Information and Communication Technology (BICT) student at Asia e University School of Science & Technology program.</em></p>
-              <p>
-              <ul>
-                <li>Bojongkulur, Kab. Bogor, Jawa Barat, 16969, Indonesia</li>
-                <li>+62 812 9337 8651</li>
-                <li>sulvadliwork@gmail.com</li>
-              </ul>
-              </p>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Associate Degree - Internet Based System Automation </h4>
-              <h5>2021 - 2023</h5>
-              <p><em>University of Indonesia - Faculty Engineering - CCIT</em></p>
-              <p><em>CGPA: 3.83</em></p>
-              <ul>
-                <li>Acquired experience in Internet of Things (IoT) technology, including sensor networks, embedded systems, and cloud computing.</li>
-                <li>Configured and designed networking devices, including routers and switches using Cisco Packet Tracer.</li>
-                <li>Learned Android application development using Java and Kotlin in Android Studio.</li>
-                <li>Developed websites integrated with Database Management Systems (DBMS) using frameworks like Laravel and CodeIgniter.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor Degree - Information communication &amp; Technology</h4>
-              <h5>2021 - 2025 (Expected)</h5>
-              <p><em>Asia e University - Faculty of Science & technology</em></p>
-              <ul>
-                <li>Developed object-oriented programming skills in Java and C++, focusing on software design and development.</li>
-                <li>Completed academic projects, including an IoT-based final project integrated with a mobile web app.</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Work Experience</h3>          
-            <div class="resume-item">
-              <h4>IoT Engineer - Kalimantan Prima Persada (KPP MINING)</h4>
-              <h5>May 2025 - Present</h5>
-              <p><em>IoT Engineer (Contract)</em></p>
-              <ul>
-                <li>Designed and deployed Console applications for mining site monitoring, improving operational visibility and safety.</li>
-                <li>Developed firmware for ESP32-based devices and implemented reliable Kafka data pipelines to the cloud.</li>
-                <li>Integrated data ingestion and dashboards using .NET-based backend services and lightweight frontend visualizations.</li>
-                <li>Collaborated with cross-functional teams (operations, electrical, and QA) to deliver production-ready solutions.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Antares - PT Telkom Indonesia</h4>
-              <h5>Dec 2024 - Present</h5>
-              <p><em>AI & Embedded Systems Developer (Internship)</em></p>
-              <ul>
-                <li>Developed <strong>Raspberry Pi 5 with AI Kit Hailo</strong>, significantly improving accuracy and processing power for AI-based edge computing.</li>
-                <li>Built <strong>multiple Computer Vision AI models</strong> optimized for real-time inference, enhancing project efficiency at Antares.</li>
-                <li>Successfully implemented <strong>Nvidia Jetson</strong> for AI vision-based edge computing solutions.</li>
-                <li>Enhanced AI model performance, contributing to <strong>higher-quality AI solutions</strong> and increasing Antares' technological capabilities.</li>
-              </ul>
-            </div>            
-            <div class="resume-item">
-              <h4>PT TAS - Vendor for PT Adhi Karya </h4>
-              <h5>Jan 2024 - Present</h5>
-              <p><em>Programmer Freelance / Project-Based</em></p>
-              <ul>
-                <li>Designed and developed automation plugins for cost calculations and safety equipment visualization in Autodesk Revit, supporting PT Adhi Karya’s construction projects.</li>
-                <li>Improved efficiency of BIM Modeller and QHSE teams by up to 80% through technical solutions based on visual programming</li>
-                <li>Integrated visual programming to simplify cost calculation and safety equipment visualization processes.</li>
-                <li>Successfully implemented DBMS in PT Adhi Karya's admin dashboard web application to manage safety equipment price data effectively and efficiently.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Honeywell Connected Laboratory Universitas Indonesia </h4>
-              <h5>Jun 2023 - Aug 2023</h5>
-              <p><em>Laboratory assistant / Assistant lecturer</em></p>
-              <ul>
-                <li>Developed automated control systems using Programmable Logic Controller (PLC) to enhance laboratory performance efficiency.</li>
-                <li>Integrated Internet of Things (IoT) in industrial equipment maintenance processes to monitor equipment health in real-time.</li>
-                <li>Successfully implemented a web-based system integrated with IoT for visual industrial equipment maintenance.</li>
-                <li>Managed and configured Linux-based systems to support laboratory operations.</li>
-            </div>
+        <div class="award-card reveal">
+          <div class="award-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Best Graduate 2024
           </div>
 
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Assistant Lecturer - Student Training Suryadarma University</h4>
-              <h5>Aug 2022 - Sep 2022</h5>
-              <p><em>Depok, West Java, Indonesia • On-site</em></p>
-              <p>
-              <ul>
-                <li>Succeed helped 30 participants from Suryadarma university.</li>
-                <li>Succeeded in helping lecturers in guiding participants in python using pycharm.</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Assistant Lecturer - Kementrian Pertahanan Republik Indonesia</h4>
-              <h5>Oct 2022 - Nov 2022</h5>
-              <p><em>Central Jakarta, Jakarta, Indonesia • On-site</em></p>
-              <p>
-              <ul>
-                <li>Succeed helped 43 participants in the training IoT Devices with ESP, Arduino, Microcontroller, Actuator, Sensors, and several IoT Based application (Blynk, Thingspeak, Thinger.io)</li>
-                <li>Succeeded in helping lecturers in guiding participants in C++, ESP.</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Student Contract - Cisco Networking Academy</h4>
-              <h5>Sep 2022 - Des 2022</h5>
-              <p><em>Depok, West Java, Indonesia • On-Site</em></p>
-              <p>
-              <ul>
-                <li>Participated in all training activities at the Cisco Networking Academy, Faculty of Engineering UI.</li>
-                <li>Studied IoT Fundamentals: Big Data & Analytics, IoT Security & Connecting Things.</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>AI Team - AUAV UI</h4>
-              <h5>Jan 2023 - Jan 2024</h5>
-              <p><em>Depok, West Java, Indonesia • Part-time</em></p>
-              <p>
-              <ul>
-                <li>Member of the programming team at AUAV, Universitas Indonesia, working on fixed-wing aircraft.</li>
-                <li>Successfully implemented AI-based object recognition systems for visual-based applications.</li>
-              </ul>
-              </p>
-            </div>
-            
-            <div class="resume-item">
-              <h4>Assistant Lecturer - Student Training Educational Staff at university of Indonesia</h4>
-              <h5>Jul 2023 - Aug 2023</h5>
-              <p><em>Depok, West Java, Indonesia • On-site</em></p>
-              <p>
-              <ul>
-                <li>Succeed helped 30 participants from educational staff at university of Indonesia</li>
-                <li>Supported lecturers in helping participants learn Microsoft Office tools, including Word, Excel, and PowerPoint.</li>
-              </ul>
-              </p>
-            </div>
+          <h3>Best Graduate — Internet-based System Automation</h3>
+          <p>Proudly recognized as the Best Graduate in TI Internet-based System Automation at Universitas Indonesia, with a CGPA of 3.83/4.00. This achievement reflects dedication and proficiency in the field, and the ability to excel in challenging academic environments while delivering real-world IoT-based automation solutions.</p>
 
-            <div class="resume-item">
-              <h4>Research Club Mentor – Mentari Intercurtural School Jakarta</h4>
-              <h5>Sep 2024 - Present</h5>
-              <p><em>South Jakarta, Jakarta, Indonesia • On-site</em></p>
-              <p>
-              <ul>
-                <li>Guided students in developing innovative projects in the Internet of Things (IoT) and software engineering fields.</li>
-                <li>Provided technical training and foundational concepts in programming and IoT-based application development.</li>
-                <li>Supported students in research, design, and implementation of technology-based projects.</li>
-                <li>Directed students in presenting their projects at school and national-level technology events and competitions.</li>
-              </ul>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-project">Project</li>
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-video">Video</li>
+          <div class="award-timestamps">
+            <h4>Video Timestamps</h4>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="setCurrentTime(0)">1:56:10 — Best Graduate in TI Internet-based System Automation</a></li>
+              <li><a href="javascript:void(0);" onclick="setCurrentTime(1)">2:29:56 — Speech by best of the best graduates</a></li>
             </ul>
           </div>
+
+          <div class="award-media">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-7">
+                <div class="video-container">
+                  <div id="player"></div>
+                </div>
+                <script>
+                  var tag = document.createElement('script');
+                  tag.src = "https://www.youtube.com/iframe_api";
+                  var firstScriptTag = document.getElementsByTagName('script')[0];
+                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                  var player;
+                  function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                      videoId: 'dOU-ifVxgP4',
+                      playerVars: { rel: 0, modestbranding: 1 }
+                    });
+                  }
+                  function setCurrentTime(slideNum) {
+                    var object = [6960, 8994];
+                    player.seekTo(object[slideNum]);
+                  }
+                </script>
+              </div>
+              <div class="col-lg-5">
+                <div class="award-certificate">
+                  <img src="assets/img/Certificate Best Graduate Muhammad Najwan Sulvadli.png" alt="Best Graduate Certificate">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ======= Resume ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="overline">Experience</span>
+          <h2>Resume &amp; <span>Background</span></h2>
+        </div>
+
+        <div class="resume-cols">
+          <!-- Left: Education + Professional Exp -->
+          <div>
+            <div class="resume-group-title reveal">Education</div>
+            <div class="timeline">
+              <div class="timeline-item education reveal">
+                <div class="timeline-date">Sep 2021 — Sep 2025</div>
+                <div class="timeline-title">Bachelor — Information Communication &amp; Technology</div>
+                <div class="timeline-org">Asia e University (AeU), School of Science &amp; Technology · Malaysia</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Object-oriented programming in Java and C++, software design and development</li>
+                    <li>IoT-based final project integrated with a mobile web app</li>
+                    <li>IT project management, business processes, and system analysis</li>
+                  </ul>
+                  <span class="cgpa-badge">CGPA: 3.62 / 4.00</span>
+                </div>
+              </div>
+              <div class="timeline-item education reveal reveal-delay-1">
+                <div class="timeline-date">Sep 2021 — Sep 2023</div>
+                <div class="timeline-title">Associate Degree — Internet Based System Automation</div>
+                <div class="timeline-org">University of Indonesia, CEP-CCIT Faculty of Engineering · Depok</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>IoT technology: sensor networks, embedded systems, cloud computing</li>
+                    <li>Networking design with Cisco Packet Tracer</li>
+                    <li>Android development (Java &amp; Kotlin), web dev with Laravel &amp; CodeIgniter</li>
+                  </ul>
+                  <span class="cgpa-badge">CGPA: 3.83 / 4.00 · Best Graduate</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-group-title reveal" style="margin-top:40px">Professional Experience</div>
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <div class="timeline-date">Sep 2024 — Dec 2024</div>
+                <div class="timeline-title">Research Club Mentor</div>
+                <div class="timeline-org">Mentari Intercultural School Jakarta · On-site</div>
+                <div class="timeline-body">Guided students in IoT, software engineering, and Android app development for school and national-level competitions.</div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-1">
+                <div class="timeline-date">Jan 2023 — Jan 2024</div>
+                <div class="timeline-title">AI Programming Team — AUAV UI</div>
+                <div class="timeline-org">Autonomous Unmanned Aerial Vehicle · Universitas Indonesia</div>
+                <div class="timeline-body">Implemented AI-based object recognition systems for fixed-wing aircraft visual applications.</div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-2">
+                <div class="timeline-date">Oct 2022 — Nov 2022</div>
+                <div class="timeline-title">Assistant Lecturer — IoT Training</div>
+                <div class="timeline-org">Badiklat Pusdiklat Tekfunghan Kemhan · Jakarta</div>
+                <div class="timeline-body">Assisted 43 participants in IoT device training covering ESP, Arduino, Microcontrollers, Sensors, Blynk, Thingspeak, Thinger.io.</div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-3">
+                <div class="timeline-date">Sep 2022 — Dec 2022</div>
+                <div class="timeline-title">Student Contract — Cisco Networking Academy</div>
+                <div class="timeline-org">Faculty of Engineering UI · Depok</div>
+                <div class="timeline-body">Studied IoT Fundamentals: Big Data &amp; Analytics, IoT Security &amp; Connecting Things.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Work Experience -->
+          <div>
+            <div class="resume-group-title reveal">Work Experience</div>
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <div class="timeline-date">Feb 2026 — Present</div>
+                <div class="timeline-title">End to End AI Engineer &amp; Data Analyst</div>
+                <div class="timeline-org">PT Global Service Indonesia (Contracted to KPP Mining) · Jakarta</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Deployed AI vehicle load monitoring system using live CCTV feeds, reducing manual oversight ~80%</li>
+                    <li>Engineered AI PPE compliance monitoring system, improving safety efficiency >70%</li>
+                    <li>Launched AI facial recognition attendance system, eliminating 100% of manual attendance sheets</li>
+                    <li>Implemented multi-camera zone intrusion detection for automated safety violation capture</li>
+                    <li>Architected modular OCR &amp; plagiarism detection platform for automated document review</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-1">
+                <div class="timeline-date">May 2025 — Jan 2026</div>
+                <div class="timeline-title">IoT Engineer</div>
+                <div class="timeline-org">PT Global Service Indonesia (Contracted to KPP Mining) · Jakarta</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Solo-designed end-to-end Push-to-Talk (PTT) dispatch system, improving audio comms ~80%</li>
+                    <li>Built web-based operator console with real-time status tracking for field communications</li>
+                    <li>Developed custom firmware for ESP32-based devices and reliable cloud data pipelines</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-2">
+                <div class="timeline-date">Dec 2024 — Mar 2025</div>
+                <div class="timeline-title">AI &amp; Embedded Systems Developer (Internship)</div>
+                <div class="timeline-org">Antares — PT Telkom Indonesia · Jakarta</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Built Computer Vision AI models optimized for real-time edge inference</li>
+                    <li>Implemented Nvidia Jetson and Raspberry Pi Hailo AI Kit for edge computing solutions</li>
+                    <li>Enhanced AI model performance contributing to Antares' technological capabilities</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-3">
+                <div class="timeline-date">Jan 2024 — Jan 2025</div>
+                <div class="timeline-title">Programmer Freelance / Project-Based</div>
+                <div class="timeline-org">PT TAS — Vendor for PT Adhi Karya · Jakarta</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Developed Autodesk Revit automation plugins for cost calculations and safety visualization</li>
+                    <li>Improved BIM Modeller and QHSE team efficiency by up to 80% via visual programming</li>
+                    <li>Implemented DBMS in admin dashboard for safety equipment price management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item reveal reveal-delay-4">
+                <div class="timeline-date">Jun 2023 — Aug 2023</div>
+                <div class="timeline-title">Laboratory Assistant / Assistant Lecturer</div>
+                <div class="timeline-org">Honeywell Connected Laboratory · Universitas Indonesia · Depok</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Developed automated control systems using PLC for laboratory performance</li>
+                    <li>Integrated IoT in industrial equipment maintenance for real-time health monitoring</li>
+                    <li>Implemented web-based IoT system for visual industrial equipment maintenance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Portfolio ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="overline">My Work</span>
+          <h2>Featured <span>Projects</span></h2>
+        </div>
+
+        <ul id="portfolio-flters" class="reveal">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-ai">AI / CV</li>
+          <li data-filter=".filter-iot">IoT</li>
+          <li data-filter=".filter-web">Web</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-video">Video</li>
+        </ul>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/projct vehicle monitoring.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project Vehicle Monitoring</h4>
-                <p>Project</p>
+          <!-- AI: Vehicle Load Monitoring -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a0a1a 0%, #0d1a2a 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+                <span style="color:#00D4FF">Computer Vision</span>
               </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/projct vehicle monitoring.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/Project-Vehicle-Monitoring" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/kalkulator cpp.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project Geometry Calculator With cpp</h4>
-                <p>Project</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/kalkulator cpp.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-overlay">
+                <h4>AI Vehicle Load Monitoring</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="AI-based vehicle load monitoring via CCTV feeds">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/kalkulator python.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project Geometry Calculator with python</h4>
-                <p>Project</p>
+          <!-- AI: PPE Safety Detection -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a1a0a 0%, #0d2010 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#00FF88" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span style="color:#00FF88">Safety AI</span>
               </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/kalkulator python.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/PythonGeometryCalculator" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bank.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project networking design in bank</h4>
-                <p>Project</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/bank.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-overlay">
+                <h4>AI PPE Safety Monitoring</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Automated PPE compliance detection, 70%+ efficiency improvement">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ATM java.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project ATM Machine with Java</h4>
-                <p>Project</p>
+          <!-- AI: Facial Recognition -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a0a1a 0%, #200d20 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#7C63FF" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M6 20v-1a6 6 0 0112 0v1"/></svg>
+                <span style="color:#7C63FF">Face Recognition</span>
               </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ATM java.jpg data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/Project-ATM-Machine" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Brodi.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App BRODI</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/Brodi.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/BirdDay" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/discord.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Project Personal Discord Bot</h4>
-                <p>Project</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/discord.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-overlay">
+                <h4>AI Facial Recognition Attendance</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Eliminated 100% manual attendance sheets, reduced HR admin time by ~90%">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hbd ayang.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Personal Website Happy Birthday Surprises</h4>
-                <p>Web</p>
+          <!-- AI: Edge Computing Jetson/Hailo -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a1000 0%, #2a1a00 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#FFB800" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>
+                <span style="color:#FFB800">Edge AI</span>
               </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/hbd ayang.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://najwansv.github.io/Naiyang.io/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Spotipayimg.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Personal App Anniversary (Spotify Clone)</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/spotipay.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/BirdDay" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-overlay">
+                <h4>Edge AI — Nvidia Jetson &amp; Raspberry Pi Hailo</h4>
+                <p>AI · Antares PT Telkom</p>
+                <div class="portfolio-actions">
+                  <a title="Real-time Computer Vision models on edge hardware">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          
+
+          <!-- IoT: Push-to-Talk Dispatch -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #001a1a 0%, #002020 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                <span style="color:#00D4FF">PTT Dispatch</span>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>Push-to-Talk Dispatch System</h4>
+                <p>IoT · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="End-to-end PTT system for mining ops, ~80% comms efficiency improvement">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IoT: Vehicle Monitoring -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/projct vehicle monitoring.jpg" alt="Vehicle Monitoring Project">
+              <div class="portfolio-overlay">
+                <h4>IoT Vehicle Monitoring System</h4>
+                <p>IoT · Embedded Systems</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/projct vehicle monitoring.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vehicle Monitoring">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://github.com/najwansv/Project-Vehicle-Monitoring" target="_blank" title="GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web: Honeywell Lab -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portofolio.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Portofolio Land Page</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portofolio.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://najwansv.github.io/Portfolio/" title="More Details"><i class="bx bx-link"></i></a>
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/webHoneywell.png" alt="Honeywell Lab Web Monitoring">
+              <div class="portfolio-overlay">
+                <h4>Honeywell Lab Web Monitoring</h4>
+                <p>Web · IoT Dashboard</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/webHoneywell.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Honeywell Lab">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://github.com/najwansv/webhoneywell" target="_blank" title="GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
+          <!-- App: Autodesk Revit Plugin -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a0a00 0%, #201200 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span style="color:#FF6B35">BIM Automation</span>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>Autodesk Revit Automation Plugin</h4>
+                <p>App · PT Adhi Karya</p>
+                <div class="portfolio-actions">
+                  <a title="Cost calculation and safety equipment visualization plugin, 80% efficiency gain">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web: Portfolio -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/portofolio.png" alt="Portfolio Website">
+              <div class="portfolio-overlay">
+                <h4>Personal Portfolio Website</h4>
+                <p>Web · GitHub Pages</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/portofolio.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Portfolio">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://najwansv.github.io/Portfolio/" target="_blank" title="Live Site">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App: Spotify Clone -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/Spotipayimg.png" alt="Spotify Clone App">
+              <div class="portfolio-overlay">
+                <h4>Personal App — Spotify Clone</h4>
+                <p>App · Android</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/Spotipayimg.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Spotify Clone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://github.com/najwansv/BirdDay" target="_blank" title="GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video: Short Movie LCS -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-video">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/maxresdefault.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Short Movie LCS</h4>
-                <p>Video</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/maxresdefault.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://youtu.be/Cnp9rNR1PQA" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/webHoneywell.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Laboratory Assistant - Honeywell Lab Web Monitoring</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/webHoneywell.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/najwansv/webhoneywell" title="More Details"><i class="bx bx-link"></i></a>
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/maxresdefault.jpg" alt="Short Movie LCS">
+              <div class="portfolio-overlay">
+                <h4>Short Movie — LCS</h4>
+                <p>Video · Film Production</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/maxresdefault.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Short Movie LCS">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://youtu.be/Cnp9rNR1PQA" target="_blank" title="Watch on YouTube">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ProjectPHP.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Name Data Collection Website Using Bootstrap and PHP</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ProjectPHP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/fatihnzrdn/charlie" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <h2>Still Ongoing</h2>
-      </div>
-    </section><!-- End Portfolio Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+          <!-- Web: PHP Data Collection -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap tilt-card">
+              <img src="assets/img/portfolio/ProjectPHP.png" alt="PHP Data Collection">
+              <div class="portfolio-overlay">
+                <h4>Data Collection Web — Bootstrap &amp; PHP</h4>
+                <p>Web · Full Stack</p>
+                <div class="portfolio-actions">
+                  <a href="assets/img/portfolio/ProjectPHP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Project">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </a>
+                  <a href="https://github.com/fatihnzrdn/charlie" target="_blank" title="GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <div class="portfolio-ongoing reveal">
+            <span class="dot"></span>
+            More projects in progress — stay tuned
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="contact">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
+        <div class="section-title reveal">
+          <span class="overline">Contact</span>
+          <h2>Let's <span>Connect</span></h2>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>NSV</h3>
+        <div class="row g-4">
+          <div class="col-lg-4 reveal">
+            <div class="contact-card">
+              <h3>Find Me On</h3>
               <div class="social-links">
-                <a href="https://www.instagram.com/najwansv/" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/muhammad-najwan-sulvadli/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/najwansv" class="github"><i class="bi bi-github"></i></a>
-                <a href="assets/cv/CV - MUHAMMAD NAJWAN SULVADLI.pdf" class="cv"><p style="color: #ECB365; font-size: medium;">CV</p></a>
+                <a href="https://github.com/najwansv" target="_blank" class="social-link github">
+                  <span class="icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </span>
+                  GitHub — najwansv
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-najwan-sulvadli/" target="_blank" class="social-link linkedin">
+                  <span class="icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                  </span>
+                  LinkedIn Profile
+                </a>
+                <a href="https://www.instagram.com/najwansv/" target="_blank" class="social-link instagram">
+                  <span class="icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  </span>
+                  Instagram — @najwansv
+                </a>
+                <a href="assets/cv/CV - MUHAMMAD NAJWAN SULVADLI.pdf" target="_blank" class="social-link cv">
+                  <span class="icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </span>
+                  Download CV
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4">
-            <div class="info">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <p>Villa Nusa Indah 2 Blok aa3 No.12A<br>Kab. Bogor, West Java, 16969</p>
+          <div class="col-lg-4 reveal reveal-delay-1">
+            <div class="contact-card">
+              <h3>Contact Info</h3>
+              <div class="contact-info-item">
+                <div class="icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="text">
+                  <strong>Location</strong>
+                  Bojongkulur, Kab. Bogor, West Java<br>Indonesia 16969
+                </div>
               </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-envelope"></i>
-                <p>sulvadliwork@gmail.com</p>
+              <div class="contact-info-item">
+                <div class="icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="text">
+                  <strong>Email</strong>
+                  sulvadliwork@gmail.com
+                </div>
               </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-phone"></i>
-                <p>+62 812 9337 8651</p>
+              <div class="contact-info-item">
+                <div class="icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="text">
+                  <strong>Phone</strong>
+                  +62 812 9337 8651
+                </div>
               </div>
-
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4">
-            <div class="info">
-              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="muhammad-najwan-sulvadli" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/muhammad-najwan-sulvadli?trk=profile-badge"></a></div>
+          <div class="col-lg-4 reveal reveal-delay-2">
+            <div class="contact-card" style="display:flex; align-items:center; justify-content:center;">
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="muhammad-najwan-sulvadli" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/muhammad-najwan-sulvadli?trk=profile-badge"></a>
+              </div>
             </div>
           </div>
-
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
+  <!-- Footer -->
   <footer id="footer">
-    <div class="container">
-    </div>
-  </footer><!-- End  Footer -->
+    <p>&copy; 2025 Muhammad Najwan Sulvadli · Built with passion</p>
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top scrollto" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
