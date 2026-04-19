@@ -82,6 +82,39 @@
 
   revealEls.forEach(el => revealObserver.observe(el));
 
+  // ===== PORTFOLIO ITEMS — auto-reveal with stagger =====
+  // Add reveal class dynamically so HTML stays clean
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  portfolioItems.forEach(item => item.classList.add('reveal'));
+
+  // Observe portfolio container: when it enters view, reveal all visible items
+  const portfolioContainer = document.querySelector('.portfolio-container');
+  if (portfolioContainer) {
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Stagger reveal for visible portfolio items
+          const items = portfolioContainer.querySelectorAll('.portfolio-item');
+          items.forEach((item, i) => {
+            setTimeout(() => item.classList.add('revealed'), i * 60);
+          });
+        }
+      });
+    }, { threshold: 0.05 }).observe(portfolioContainer);
+  }
+
+  // ===== SKILLS STRIP — stagger reveal =====
+  const skillsStrip = document.querySelector('.skills-strip');
+  if (skillsStrip) {
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('stagger-revealed');
+        }
+      });
+    }, { threshold: 0.2 }).observe(skillsStrip);
+  }
+
   // ===== TILT EFFECT ON PORTFOLIO CARDS =====
   document.querySelectorAll('.tilt-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -99,6 +132,55 @@
       card.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
     });
   });
+
+  // ===== MAGNETIC BUTTONS (spring-like lerp) =====
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    document.querySelectorAll('.btn-primary-glass, .btn-secondary-glass').forEach(btn => {
+      let targetX = 0, targetY = 0;
+      let currentX = 0, currentY = 0;
+      let rafId = null;
+      let hovered = false;
+
+      function lerp(a, b, t) { return a + (b - a) * t; }
+
+      function tick() {
+        currentX = lerp(currentX, targetX, 0.12);
+        currentY = lerp(currentY, targetY, 0.12);
+        btn.style.transform = `translate(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px)`;
+
+        const settled = Math.abs(currentX - targetX) < 0.05 && Math.abs(currentY - targetY) < 0.05;
+        if (!settled || hovered) {
+          rafId = requestAnimationFrame(tick);
+        } else {
+          btn.style.transform = '';
+          rafId = null;
+        }
+      }
+
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        targetX = (e.clientX - rect.left - rect.width / 2) * 0.22;
+        targetY = (e.clientY - rect.top - rect.height / 2) * 0.22;
+        hovered = true;
+        if (!rafId) rafId = requestAnimationFrame(tick);
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        hovered = false;
+        targetX = 0;
+        targetY = 0;
+        if (!rafId) rafId = requestAnimationFrame(tick);
+      });
+
+      // Preserve :active feel — scale handled by CSS :active override
+      btn.addEventListener('mousedown', () => {
+        targetX = 0;
+        targetY = 0;
+      });
+    });
+  }
 
   // ===== NAVBAR ACTIVE LINK ON SCROLL =====
   const navLinks = document.querySelectorAll('#navbar .scrollto');
@@ -168,7 +250,6 @@
 
   // ===== ISOTOPE PORTFOLIO FILTER =====
   window.addEventListener('load', () => {
-    const portfolioContainer = document.querySelector('.portfolio-container');
     if (portfolioContainer && typeof Isotope !== 'undefined') {
       const iso = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
@@ -180,6 +261,12 @@
           document.querySelectorAll('#portfolio-flters li').forEach(b => b.classList.remove('filter-active'));
           this.classList.add('filter-active');
           iso.arrange({ filter: this.getAttribute('data-filter') });
+
+          // Re-reveal filtered items
+          iso.getFilteredItemElements().forEach((el, i) => {
+            el.classList.remove('revealed');
+            setTimeout(() => el.classList.add('revealed'), i * 60);
+          });
         });
       });
     }
