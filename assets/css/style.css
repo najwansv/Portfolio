@@ -40,20 +40,20 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   -ms-overflow-style: none;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.1) transparent;
+  scrollbar-width: none;
   line-height: 1.7;
 }
 
-body::-webkit-scrollbar { width: 4px; }
-body::-webkit-scrollbar-track { background: transparent; }
-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+body::-webkit-scrollbar { width: 0; height: 0; display: none; }
+html { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar { display: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Archivo', 'Playfair Display', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 a {
@@ -89,6 +89,104 @@ body::before {
   transform: translate(-50%, -50%);
   z-index: 1;
   top: 0; left: 0;
+}
+
+/* ===== CUSTOM CURSOR — AI Targeting Reticle ===== */
+* { cursor: none !important; }
+
+#cursor-dot,
+#cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+#cursor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+  transition: width var(--dur-fast) var(--ease-out),
+              height var(--dur-fast) var(--ease-out),
+              background var(--dur-fast) var(--ease-out),
+              opacity var(--dur-fast) var(--ease-out);
+}
+
+#cursor-ring {
+  width: 32px;
+  height: 32px;
+  background:
+    /* top-left corner */
+    linear-gradient(to right, var(--accent-cyan) 10px, transparent 10px) top left/12px 1.5px no-repeat,
+    linear-gradient(to bottom, var(--accent-cyan) 10px, transparent 10px) top left/1.5px 12px no-repeat,
+    /* top-right corner */
+    linear-gradient(to left, var(--accent-cyan) 10px, transparent 10px) top right/12px 1.5px no-repeat,
+    linear-gradient(to bottom, var(--accent-cyan) 10px, transparent 10px) top right/1.5px 12px no-repeat,
+    /* bottom-left corner */
+    linear-gradient(to right, var(--accent-cyan) 10px, transparent 10px) bottom left/12px 1.5px no-repeat,
+    linear-gradient(to top, var(--accent-cyan) 10px, transparent 10px) bottom left/1.5px 12px no-repeat,
+    /* bottom-right corner */
+    linear-gradient(to left, var(--accent-cyan) 10px, transparent 10px) bottom right/12px 1.5px no-repeat,
+    linear-gradient(to top, var(--accent-cyan) 10px, transparent 10px) bottom right/1.5px 12px no-repeat;
+  filter: drop-shadow(0 0 4px rgba(0, 212, 255, 0.6));
+  transition: width var(--dur-base) var(--ease-out),
+              height var(--dur-base) var(--ease-out),
+              transform var(--dur-base) var(--ease-out),
+              filter var(--dur-base) var(--ease-out);
+}
+
+/* Hover state: ring expands + rotates, dot shrinks (acquired-target feel) */
+body.cursor-hover #cursor-ring {
+  width: 52px;
+  height: 52px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  filter: drop-shadow(0 0 8px rgba(124, 99, 255, 0.8));
+  background:
+    linear-gradient(to right, var(--accent-purple) 14px, transparent 14px) top left/16px 1.5px no-repeat,
+    linear-gradient(to bottom, var(--accent-purple) 14px, transparent 14px) top left/1.5px 16px no-repeat,
+    linear-gradient(to left, var(--accent-purple) 14px, transparent 14px) top right/16px 1.5px no-repeat,
+    linear-gradient(to bottom, var(--accent-purple) 14px, transparent 14px) top right/1.5px 16px no-repeat,
+    linear-gradient(to right, var(--accent-purple) 14px, transparent 14px) bottom left/16px 1.5px no-repeat,
+    linear-gradient(to top, var(--accent-purple) 14px, transparent 14px) bottom left/1.5px 16px no-repeat,
+    linear-gradient(to left, var(--accent-purple) 14px, transparent 14px) bottom right/16px 1.5px no-repeat,
+    linear-gradient(to top, var(--accent-purple) 14px, transparent 14px) bottom right/1.5px 16px no-repeat;
+}
+body.cursor-hover #cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--accent-purple);
+  box-shadow: 0 0 12px rgba(124, 99, 255, 0.9);
+}
+
+/* Text input state: dot becomes terminal caret */
+body.cursor-text #cursor-dot {
+  width: 2px;
+  height: 18px;
+  border-radius: 1px;
+  background: var(--accent-green);
+  box-shadow: 0 0 6px rgba(0, 255, 136, 0.8);
+  animation: caret-blink 1s steps(2) infinite;
+}
+body.cursor-text #cursor-ring { opacity: 0; }
+
+@keyframes caret-blink {
+  50% { opacity: 0; }
+}
+
+/* Click pulse */
+body.cursor-down #cursor-ring {
+  width: 24px;
+  height: 24px;
+}
+
+/* Disable on touch / no-hover devices */
+@media (hover: none), (pointer: coarse) {
+  * { cursor: auto !important; }
+  #cursor-dot, #cursor-ring, #cursor-glow { display: none !important; }
 }
 
 /* ===== GLASS CARD ===== */
@@ -544,7 +642,7 @@ section { position: relative; z-index: 1; padding: 80px 0; }
   font-size: 2rem;
   font-weight: 700;
   color: var(--accent-cyan);
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 1;
   margin-bottom: 4px;
 }

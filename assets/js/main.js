@@ -1,10 +1,14 @@
 (function () {
   'use strict';
 
-  // ===== CURSOR GLOW =====
+  // ===== CURSOR GLOW + CUSTOM CURSOR =====
   const cursorGlow = document.getElementById('cursor-glow');
+  const cursorDot = document.getElementById('cursor-dot');
+  const cursorRing = document.getElementById('cursor-ring');
   let mouseX = 0, mouseY = 0;
   let glowX = 0, glowY = 0;
+  let dotX = 0, dotY = 0;
+  let ringX = 0, ringY = 0;
 
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
@@ -21,16 +25,54 @@
     }
   });
 
-  function animateGlow() {
+  function animateCursor() {
+    // Ambient glow — slow lerp
     glowX += (mouseX - glowX) * 0.08;
     glowY += (mouseY - glowY) * 0.08;
     if (cursorGlow) {
       cursorGlow.style.left = glowX + 'px';
       cursorGlow.style.top = glowY + 'px';
     }
-    requestAnimationFrame(animateGlow);
+    // Dot — near-instant
+    dotX += (mouseX - dotX) * 0.55;
+    dotY += (mouseY - dotY) * 0.55;
+    if (cursorDot) {
+      cursorDot.style.left = dotX + 'px';
+      cursorDot.style.top = dotY + 'px';
+    }
+    // Ring — slight delay for trailing reticle feel
+    ringX += (mouseX - ringX) * 0.22;
+    ringY += (mouseY - ringY) * 0.22;
+    if (cursorRing) {
+      cursorRing.style.left = ringX + 'px';
+      cursorRing.style.top = ringY + 'px';
+    }
+    requestAnimationFrame(animateCursor);
   }
-  animateGlow();
+  animateCursor();
+
+  // Cursor hover/text states
+  const hoverSelector = 'a, button, .portfolio-wrap, .filter-btn, [role="button"], .nav-link, .scrollto, summary, label[for]';
+  const textSelector = 'input[type="text"], input[type="email"], input[type="search"], input:not([type]), textarea, [contenteditable="true"]';
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.closest(hoverSelector)) document.body.classList.add('cursor-hover');
+    if (e.target.closest(textSelector)) document.body.classList.add('cursor-text');
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest(hoverSelector)) document.body.classList.remove('cursor-hover');
+    if (e.target.closest(textSelector)) document.body.classList.remove('cursor-text');
+  });
+  document.addEventListener('mousedown', () => document.body.classList.add('cursor-down'));
+  document.addEventListener('mouseup', () => document.body.classList.remove('cursor-down'));
+  // Hide cursor when leaving the window
+  document.addEventListener('mouseleave', () => {
+    if (cursorDot) cursorDot.style.opacity = '0';
+    if (cursorRing) cursorRing.style.opacity = '0';
+  });
+  document.addEventListener('mouseenter', () => {
+    if (cursorDot) cursorDot.style.opacity = '1';
+    if (cursorRing) cursorRing.style.opacity = '1';
+  });
 
   // ===== TYPING EFFECT =====
   const typedEl = document.getElementById('typed-text');
