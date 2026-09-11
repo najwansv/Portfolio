@@ -379,23 +379,41 @@
           <li data-filter=".filter-iot">IoT</li>
           <li data-filter=".filter-web">Web</li>
           <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-video">Video</li>
         </ul>
 
         <div class="row portfolio-container">
 
-          <!-- AI: Vehicle Load Monitoring -->
+          <!-- AI: AISA — PPE Safety Analyzer (ICT-SAFETY-ANALYZER-AI / INDE-AI-SORA) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a0a1a 0%, #0d1a2a 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
-                <span style="color:#00D4FF">Computer Vision</span>
+              <div class="portfolio-mock portfolio-mock--cyan mock-brackets">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> LIVE</span>
+                  <span class="mock-badge mock-badge--cyan">CAM-04 · YOLO v8</span>
+                </div>
+                <svg class="mock-person" viewBox="0 0 60 120" preserveAspectRatio="xMidYMax meet">
+                  <circle cx="30" cy="18" r="11"/>
+                  <path d="M14 32 L46 32 L48 78 L12 78 Z"/>
+                  <line x1="20" y1="78" x2="18" y2="115"/>
+                  <line x1="40" y1="78" x2="42" y2="115"/>
+                </svg>
+                <div class="mock-bbox mock-bbox--green" data-label="HELMET · 97%" style="top:26%; left:34%; width:32%; height:14%;"></div>
+                <div class="mock-bbox mock-bbox--amber" data-label="VEST · 94%" style="top:42%; left:30%; width:40%; height:22%;"></div>
+                <div class="mock-bbox mock-bbox--cyan" data-label="PERSON · 99%" style="top:22%; left:26%; width:48%; height:60%;"></div>
+                <div class="mock-scanline"></div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--cyan">3</span><span class="k">Persons</span></div>
+                  <div class="mock-stat"><span class="v v--green">3</span><span class="k">Compliant</span></div>
+                  <div class="mock-stat"><span class="v v--red">0</span><span class="k">Violations</span></div>
+                </div>
               </div>
               <div class="portfolio-overlay">
-                <h4>AI Vehicle Load Monitoring</h4>
+                <h4>AISA — AI Safety Analyzer (APD)</h4>
                 <p>AI · KPP Mining</p>
                 <div class="portfolio-actions">
-                  <a title="AI-based vehicle load monitoring via CCTV feeds">
+                  <a title="YOLO + FastAPI + MongoDB. Live RTSP PPE detection: helm, rompi, safety shoes. HUD overlay per stream, evidence recording, daily stats. React + Vite dashboard.">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
@@ -403,18 +421,56 @@
             </div>
           </div>
 
-          <!-- AI: PPE Safety Detection -->
+          <!-- AI: AI SORA — Safety Observation & Risk Analytics (INDE-AI-SORA) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #0a1a0a 0%, #0d2010 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#00FF88" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                <span style="color:#00FF88">Safety AI</span>
+              <div class="portfolio-mock portfolio-mock--red">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--red">RISK ANALYTICS</span>
+                  <span class="mock-badge mock-badge--cyan">INDE MINING</span>
+                </div>
+                <div class="mock-dashboard">
+                  <div class="mock-dash-row">
+                    <div class="mock-dash-tile"><div class="v" style="color:#ff5b5f">7</div><div class="k">Violations · 24h</div></div>
+                    <div class="mock-dash-tile"><div class="v" style="color:#00FF88">96%</div><div class="k">PPE Compliance</div></div>
+                  </div>
+                  <div class="mock-dash-chart">
+                    <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="soraArea" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0" stop-color="rgba(255,91,95,0.4)"/>
+                          <stop offset="1" stop-color="rgba(255,91,95,0)"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,35 L20,40 L40,20 L60,45 L80,28 L100,50 L120,15 L140,38 L160,10 L180,32 L200,18 L200,60 L0,60 Z" fill="url(#soraArea)"/>
+                      <path d="M0,35 L20,40 L40,20 L60,45 L80,28 L100,50 L120,15 L140,38 L160,10 L180,32 L200,18" fill="none" stroke="#ff5b5f" stroke-width="1.5"/>
+                      <circle cx="160" cy="10" r="2.8" fill="#ff5b5f"/>
+                      <line x1="160" y1="10" x2="160" y2="60" stroke="rgba(255,91,95,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
+                    </svg>
+                  </div>
+                  <div class="mock-dash-row" style="grid-template-columns: 1fr 1fr 1fr;">
+                    <div class="mock-dash-tile" style="text-align:center; padding:5px 4px;">
+                      <div class="v" style="font-size:0.7rem; color:#FFB800">HELM</div>
+                      <div class="k" style="font-size:0.45rem;">3 miss</div>
+                    </div>
+                    <div class="mock-dash-tile" style="text-align:center; padding:5px 4px;">
+                      <div class="v" style="font-size:0.7rem; color:#00D4FF">VEST</div>
+                      <div class="k" style="font-size:0.45rem;">2 miss</div>
+                    </div>
+                    <div class="mock-dash-tile" style="text-align:center; padding:5px 4px;">
+                      <div class="v" style="font-size:0.7rem; color:#7C63FF">SHOES</div>
+                      <div class="k" style="font-size:0.45rem;">2 miss</div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="portfolio-overlay">
-                <h4>AI PPE Safety Monitoring</h4>
-                <p>AI · KPP Mining</p>
+                <h4>AI SORA — Safety Observation &amp; Risk Analytics</h4>
+                <p>AI · INDE Mining</p>
                 <div class="portfolio-actions">
-                  <a title="Automated PPE compliance detection, 70%+ efficiency improvement">
+                  <a title="AISA architecture redeployed for INDE Mining as SORA. YOLO PPE detection + risk analytics dashboard: daily violations trend, per-APD miss breakdown, evidence recording, MongoDB persistence.">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
@@ -422,18 +478,38 @@
             </div>
           </div>
 
-          <!-- AI: Facial Recognition -->
+          <!-- AI: ARVIS — Pitstop Monitor + Hull OCR (ICT-ARVIS-AI) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a0a1a 0%, #200d20 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7C63FF" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M6 20v-1a6 6 0 0112 0v1"/></svg>
-                <span style="color:#7C63FF">Face Recognition</span>
+              <div class="portfolio-mock portfolio-mock--amber mock-brackets">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> REC</span>
+                  <span class="mock-badge mock-badge--amber">PITSTOP-A · 04:38</span>
+                </div>
+                <svg class="mock-truck" viewBox="0 0 200 90" preserveAspectRatio="xMidYMid meet">
+                  <path d="M10 60 L10 40 L70 40 L80 25 L140 25 L150 40 L190 40 L190 60 Z"/>
+                  <circle cx="50" cy="65" r="9" fill="rgba(255,184,0,0.2)"/>
+                  <circle cx="155" cy="65" r="9" fill="rgba(255,184,0,0.2)"/>
+                  <rect x="90" y="30" width="45" height="12" fill="rgba(255,184,0,0.1)"/>
+                </svg>
+                <div class="mock-bbox mock-bbox--amber" data-label="TRUCK · HD785" style="top:30%; left:12%; width:76%; height:44%;"></div>
+                <div class="mock-panel" style="bottom: 42px; left: 14px;">
+                  <div class="mock-panel-row"><span>HULL NO.</span><span class="v v--amber">4285</span></div>
+                  <div class="mock-panel-row"><span>OCR CONF.</span><span class="v v--green">98.2%</span></div>
+                </div>
+                <div class="mock-scanline"></div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--amber">12</span><span class="k">Sessions Today</span></div>
+                  <div class="mock-stat"><span class="v v--cyan">4</span><span class="k">RTSP Streams</span></div>
+                </div>
               </div>
               <div class="portfolio-overlay">
-                <h4>AI Facial Recognition Attendance</h4>
+                <h4>ARVIS — Pitstop Monitor &amp; Hull OCR</h4>
                 <p>AI · KPP Mining</p>
                 <div class="portfolio-actions">
-                  <a title="Eliminated 100% manual attendance sheets, reduced HR admin time by ~90%">
+                  <a title="YOLO custom truck detection + EasyOCR 4-digit hull number reader. Zone editor, evidence recording per session, MongoDB Atlas persistence, WebSocket multiplex dashboard.">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
@@ -441,18 +517,219 @@
             </div>
           </div>
 
-          <!-- AI: Edge Computing Jetson/Hailo -->
+          <!-- AI: Load Analyzer AI (ICT-LOAD-ANALYZER-AI) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a1000 0%, #2a1a00 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#FFB800" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>
-                <span style="color:#FFB800">Edge AI</span>
+              <div class="portfolio-mock portfolio-mock--cyan mock-brackets">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> INFERENCING</span>
+                  <span class="mock-badge mock-badge--cyan">MJPEG · 24 FPS</span>
+                </div>
+                <div class="mock-gauge">
+                  <svg viewBox="0 0 120 68">
+                    <path d="M 10 60 A 50 50 0 0 1 110 60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 10 60 A 50 50 0 0 1 96 22" fill="none" stroke="url(#loadGrad)" stroke-width="8" stroke-linecap="round"/>
+                    <defs>
+                      <linearGradient id="loadGrad" x1="0" x2="1">
+                        <stop offset="0" stop-color="#00FF88"/>
+                        <stop offset="0.6" stop-color="#00D4FF"/>
+                        <stop offset="1" stop-color="#7C63FF"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="96" cy="22" r="4" fill="#7C63FF"/>
+                  </svg>
+                  <div class="mock-gauge-value">78%<small>LOAD FACTOR</small></div>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--cyan">HD785</span><span class="k">Class</span></div>
+                  <div class="mock-stat"><span class="v v--green">96T</span><span class="k">Est. Weight</span></div>
+                  <div class="mock-stat"><span class="v v--purple">OK</span><span class="k">Compliance</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>Load Analyzer AI — Vehicle Monitor</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Ultralytics YOLO + FastAPI + Docker. Real-time RTSP vehicle load classification, MJPEG streaming, React + Vite + Tailwind frontend served via Nginx.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI: SEVIRO AI — Zone Monitor + Pose (ICT-SEVIRO-AI) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--green mock-brackets">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> POSE</span>
+                  <span class="mock-badge mock-badge--green">17 KEYPOINTS</span>
+                </div>
+                <div class="mock-zone-poly"></div>
+                <svg style="position:absolute; top:38%; left:52%; width:38px; height:36%;" viewBox="0 0 40 100" preserveAspectRatio="xMidYMax meet">
+                  <circle cx="20" cy="10" r="5" fill="none" stroke="#00FF88" stroke-width="1.2"/>
+                  <line x1="20" y1="15" x2="20" y2="50" stroke="#00FF88" stroke-width="1.2"/>
+                  <line x1="20" y1="22" x2="6" y2="34" stroke="#00FF88" stroke-width="1.2"/>
+                  <line x1="20" y1="22" x2="34" y2="34" stroke="#00FF88" stroke-width="1.2"/>
+                  <line x1="20" y1="50" x2="10" y2="88" stroke="#00FF88" stroke-width="1.2"/>
+                  <line x1="20" y1="50" x2="30" y2="88" stroke="#00FF88" stroke-width="1.2"/>
+                  <circle cx="6" cy="34" r="2.2" fill="#ff5b5f"/>
+                  <circle cx="34" cy="34" r="2.2" fill="#00FF88"/>
+                  <circle cx="20" cy="10" r="1.5" fill="#00FF88"/>
+                  <circle cx="10" cy="88" r="1.5" fill="#00FF88"/>
+                  <circle cx="30" cy="88" r="1.5" fill="#00FF88"/>
+                </svg>
+                <div class="mock-panel" style="top: 34px; right: 14px;">
+                  <div class="mock-panel-row"><span>WRIST-IN</span><span class="v v--red">1</span></div>
+                  <div class="mock-panel-row"><span>ZONE</span><span class="v v--green">ACTIVE</span></div>
+                </div>
+                <div class="mock-scanline"></div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--green">7</span><span class="k">Zones</span></div>
+                  <div class="mock-stat"><span class="v v--cyan">28</span><span class="k">Events/hr</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>SEVIRO AI — Zone Monitor + Pose</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="YOLO pose detection with zone-based wrist-entry event logging. Per-camera stream workers, event batcher, MongoDB Atlas persistence, React zone editor.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI: Facial Recognition Attendance -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--purple mock-brackets">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> SCANNING</span>
+                  <span class="mock-badge mock-badge--purple">FACE-DB · 342</span>
+                </div>
+                <div class="mock-face-grid">
+                  <div class="mock-face mock-face--matched" data-conf="98%">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                  <div class="mock-face">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                  <div class="mock-face mock-face--matched" data-conf="95%">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                  <div class="mock-face">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                  <div class="mock-face mock-face--matched" data-conf="99%">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                  <div class="mock-face">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </div>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--purple">128</span><span class="k">Check-ins</span></div>
+                  <div class="mock-stat"><span class="v v--green">100%</span><span class="k">Auto</span></div>
+                  <div class="mock-stat"><span class="v v--cyan">-90%</span><span class="k">HR Time</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>Facial Recognition Attendance</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Face-embedding attendance system replacing manual sign-in sheets. Cut HR admin time ~90% and eliminated 100% of paper attendance workflows.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI: CPMD — Plagiarism Detection Platform (CPMD-CIP-API-AI) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--purple">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--purple">LLM · REASONING</span>
+                  <span class="mock-badge mock-badge--cyan">OCR · GPU</span>
+                </div>
+                <div class="mock-doc mock-doc--a">
+                  <div class="mock-doc-line" style="width:80%"></div>
+                  <div class="mock-doc-line hl-a" style="width:100%"></div>
+                  <div class="mock-doc-line" style="width:60%"></div>
+                  <div class="mock-doc-line hl-a" style="width:90%"></div>
+                  <div class="mock-doc-line" style="width:75%"></div>
+                  <div class="mock-doc-line" style="width:55%"></div>
+                </div>
+                <div class="mock-doc mock-doc--b">
+                  <div class="mock-doc-line" style="width:70%"></div>
+                  <div class="mock-doc-line hl-b" style="width:100%"></div>
+                  <div class="mock-doc-line" style="width:85%"></div>
+                  <div class="mock-doc-line hl-b" style="width:90%"></div>
+                  <div class="mock-doc-line" style="width:65%"></div>
+                  <div class="mock-doc-line" style="width:80%"></div>
+                </div>
+                <div class="mock-similarity">
+                  <span class="v">87%</span>
+                  <span class="k">Similar</span>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--cyan">PDF</span><span class="k">Input</span></div>
+                  <div class="mock-stat"><span class="v v--green">Jaccard</span><span class="k">Baseline</span></div>
+                  <div class="mock-stat"><span class="v v--purple">LLM</span><span class="k">Reasoning</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>CPMD — Plagiarism Detection Platform</h4>
+                <p>AI · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Modular API architecture on Linux + NVIDIA GPU: OCR PDF → agent orchestration → LLM reasoning pipeline. Jaccard baseline + LLM reasoning, report builder.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI: Edge AI — Jetson & Hailo -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--cyan">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> INFER</span>
+                  <span class="mock-badge mock-badge--cyan">HAILO-8L · 13 TOPS</span>
+                </div>
+                <div class="mock-device">
+                  <div class="mock-device-chip">JETSON<br>NANO</div>
+                  <div class="mock-device-trace mock-device-trace--h" style="top:20%; left:8%; width:30%;"></div>
+                  <div class="mock-device-trace mock-device-trace--h" style="top:80%; right:8%; width:30%;"></div>
+                  <div class="mock-device-trace mock-device-trace--v" style="left:15%; top:20%; height:60%;"></div>
+                  <div class="mock-device-trace mock-device-trace--v" style="right:15%; top:20%; height:60%;"></div>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--cyan">42</span><span class="k">FPS</span></div>
+                  <div class="mock-stat"><span class="v v--green">8W</span><span class="k">Power</span></div>
+                  <div class="mock-stat"><span class="v v--purple">18ms</span><span class="k">Latency</span></div>
+                </div>
               </div>
               <div class="portfolio-overlay">
                 <h4>Edge AI — Nvidia Jetson &amp; Raspberry Pi Hailo</h4>
                 <p>AI · Antares PT Telkom</p>
                 <div class="portfolio-actions">
-                  <a title="Real-time Computer Vision models on edge hardware">
+                  <a title="Real-time Computer Vision models optimized for edge inference on Nvidia Jetson and Raspberry Pi Hailo AI Kit. Model quantization, TensorRT tuning.">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
@@ -460,18 +737,38 @@
             </div>
           </div>
 
-          <!-- IoT: Push-to-Talk Dispatch -->
+          <!-- IoT: DFAST Intercom — PTT System -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
             <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #001a1a 0%, #002020 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
-                <span style="color:#00D4FF">PTT Dispatch</span>
+              <div class="portfolio-mock portfolio-mock--cyan">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-live"><span class="mock-live-dot"></span> BROADCAST</span>
+                  <span class="mock-badge mock-badge--cyan">CH-07 · PIT-A</span>
+                </div>
+                <div class="mock-radio">
+                  <div class="mock-radio-ring"></div>
+                  <div class="mock-radio-ring"></div>
+                  <div class="mock-radio-ring"></div>
+                  <div class="mock-radio-core">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+                  </div>
+                </div>
+                <div class="mock-waveform">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--cyan">Kafka</span><span class="k">Broker</span></div>
+                  <div class="mock-stat"><span class="v v--green">24</span><span class="k">Units</span></div>
+                  <div class="mock-stat"><span class="v v--purple">+80%</span><span class="k">Comms Eff.</span></div>
+                </div>
               </div>
               <div class="portfolio-overlay">
-                <h4>Push-to-Talk Dispatch System</h4>
+                <h4>DFAST Intercom — PTT Dispatch System</h4>
                 <p>IoT · KPP Mining</p>
                 <div class="portfolio-actions">
-                  <a title="End-to-end PTT system for mining ops, ~80% comms efficiency improvement">
+                  <a title="End-to-end Push-to-Talk system for mining ops. Kafka (Confluent Cloud) audio streaming, ESP32 hotkey firmware, ASP.NET Core relay + web operator console, ~80% comms efficiency gain.">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
@@ -479,17 +776,35 @@
             </div>
           </div>
 
-          <!-- IoT: Vehicle Monitoring -->
+          <!-- IoT: Vehicle Monitoring (University project) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
             <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/projct vehicle monitoring.jpg" alt="Vehicle Monitoring Project">
+              <div class="portfolio-mock portfolio-mock--green">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--green">ESP8266 · MQTT</span>
+                  <span class="mock-badge mock-badge--cyan">RFID · SPEED</span>
+                </div>
+                <div class="mock-device">
+                  <div class="mock-device-chip">ESP<br>8266</div>
+                  <div class="mock-device-trace mock-device-trace--h" style="top:25%; left:5%; width:35%; background:#00FF88;"></div>
+                  <div class="mock-device-trace mock-device-trace--h" style="top:75%; right:5%; width:35%; background:#00FF88;"></div>
+                  <div class="mock-device-trace mock-device-trace--v" style="left:20%; top:25%; height:50%; background:#00FF88;"></div>
+                  <div class="mock-device-trace mock-device-trace--v" style="right:20%; top:25%; height:50%; background:#00FF88;"></div>
+                  <div style="position:absolute; top:12%; left:6%; width:8px; height:8px; border-radius:50%; background:#00FF88; box-shadow:0 0 6px #00FF88;"></div>
+                  <div style="position:absolute; bottom:12%; right:6%; width:8px; height:8px; border-radius:50%; background:#7C63FF; box-shadow:0 0 6px #7C63FF;"></div>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--green">64</span><span class="k">km/h</span></div>
+                  <div class="mock-stat"><span class="v v--cyan">RFID</span><span class="k">ID Match</span></div>
+                  <div class="mock-stat"><span class="v v--amber">220ml</span><span class="k">Fuel</span></div>
+                </div>
+              </div>
               <div class="portfolio-overlay">
                 <h4>IoT Vehicle Monitoring System</h4>
-                <p>IoT · Embedded Systems</p>
+                <p>IoT · Final Project</p>
                 <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/projct vehicle monitoring.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vehicle Monitoring">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
                   <a href="https://github.com/najwansv/Project-Vehicle-Monitoring" target="_blank" title="GitHub">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                   </a>
@@ -498,17 +813,79 @@
             </div>
           </div>
 
-          <!-- Web: Honeywell Lab -->
+          <!-- Web: AG-MCP Middleware Suite (SQL / MONITORING / MONGO) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/webHoneywell.png" alt="Honeywell Lab Web Monitoring">
+              <div class="portfolio-mock portfolio-mock--purple">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--purple">AZURE · FOUNDRY</span>
+                  <span class="mock-badge mock-badge--cyan">FastAPI</span>
+                </div>
+                <div class="mock-arch">
+                  <div class="mock-arch-node mock-arch-node--purple">Azure AI Foundry Agent</div>
+                  <div class="mock-arch-arrow">▼</div>
+                  <div class="mock-arch-node mock-arch-node--accent">AG-MCP Middleware · X-API-Key</div>
+                  <div class="mock-arch-arrow">▼</div>
+                  <div class="mock-arch-row">
+                    <div class="mock-arch-node">SQL Server</div>
+                    <div class="mock-arch-node">Log Analytics</div>
+                    <div class="mock-arch-node">MongoDB</div>
+                  </div>
+                </div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="v v--purple">3</span><span class="k">Services</span></div>
+                  <div class="mock-stat"><span class="v v--green">R/O</span><span class="k">Guarded</span></div>
+                  <div class="mock-stat"><span class="v v--cyan">Multi-alias</span><span class="k">Routing</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>AG-MCP — Foundry Middleware Suite</h4>
+                <p>Web · KPP Mining</p>
+                <div class="portfolio-actions">
+                  <a title="Universal SQL / KQL / MongoDB middleware for Azure AI Foundry agents. FastAPI + Managed Identity, alias-based multi-target routing, per-workspace whitelist, read-only guards.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web: Honeywell Lab Web Monitoring -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--cyan">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--cyan">HONEYWELL LAB</span>
+                  <span class="mock-badge mock-badge--green">PLC · ONLINE</span>
+                </div>
+                <div class="mock-dashboard">
+                  <div class="mock-dash-row">
+                    <div class="mock-dash-tile"><div class="v">54°C</div><div class="k">Temp</div></div>
+                    <div class="mock-dash-tile"><div class="v" style="color:#00FF88">92%</div><div class="k">Uptime</div></div>
+                  </div>
+                  <div class="mock-dash-chart">
+                    <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="hwArea" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0" stop-color="rgba(0,212,255,0.35)"/>
+                          <stop offset="1" stop-color="rgba(0,212,255,0)"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,45 L20,38 L40,42 L60,25 L80,30 L100,18 L120,22 L140,12 L160,20 L180,15 L200,10 L200,60 L0,60 Z" fill="url(#hwArea)"/>
+                      <path d="M0,45 L20,38 L40,42 L60,25 L80,30 L100,18 L120,22 L140,12 L160,20 L180,15 L200,10" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+                      <circle cx="200" cy="10" r="2.5" fill="#00D4FF"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
               <div class="portfolio-overlay">
                 <h4>Honeywell Lab Web Monitoring</h4>
-                <p>Web · IoT Dashboard</p>
+                <p>Web · Lab Assistant · UI</p>
                 <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/webHoneywell.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Honeywell Lab">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
                   <a href="https://github.com/najwansv/webhoneywell" target="_blank" title="GitHub">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                   </a>
@@ -517,75 +894,42 @@
             </div>
           </div>
 
-          <!-- App: Autodesk Revit Plugin -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap tilt-card">
-              <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #1a0a00 0%, #201200 100%);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                <span style="color:#FF6B35">BIM Automation</span>
-              </div>
-              <div class="portfolio-overlay">
-                <h4>Autodesk Revit Automation Plugin</h4>
-                <p>App · PT Adhi Karya</p>
-                <div class="portfolio-actions">
-                  <a title="Cost calculation and safety equipment visualization plugin, 80% efficiency gain">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Web: Portfolio -->
+          <!-- Web: Personal Portfolio Website -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/portofolio.png" alt="Portfolio Website">
+              <div class="portfolio-mock portfolio-mock--dark">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-browser">
+                  <div class="mock-browser-bar">
+                    <span class="mock-browser-dot"></span>
+                    <span class="mock-browser-dot"></span>
+                    <span class="mock-browser-dot"></span>
+                    <span class="mock-browser-url">najwansv.github.io</span>
+                  </div>
+                  <div class="mock-browser-body">
+                    <div style="display:flex; align-items:center; gap:6px;">
+                      <span style="width:22px; height:22px; border-radius:50%; background:linear-gradient(135deg, #00D4FF, #7C63FF); display:inline-block;"></span>
+                      <div style="flex:1;">
+                        <div style="height:5px; width:60%; background:rgba(255,255,255,0.4); border-radius:2px; margin-bottom:3px;"></div>
+                        <div style="height:3px; width:40%; background:rgba(255,255,255,0.2); border-radius:1px;"></div>
+                      </div>
+                    </div>
+                    <div style="height:1px; background:rgba(255,255,255,0.08); margin: 4px 0;"></div>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:6px;">
+                      <div style="height:32px; border:1px solid rgba(255,255,255,0.08); border-radius:4px; background:linear-gradient(135deg, rgba(0,212,255,0.08), transparent);"></div>
+                      <div style="height:32px; border:1px solid rgba(255,255,255,0.08); border-radius:4px; background:linear-gradient(135deg, rgba(124,99,255,0.08), transparent);"></div>
+                      <div style="height:32px; border:1px solid rgba(255,255,255,0.08); border-radius:4px; background:linear-gradient(135deg, rgba(0,255,136,0.08), transparent);"></div>
+                      <div style="height:32px; border:1px solid rgba(255,255,255,0.08); border-radius:4px; background:linear-gradient(135deg, rgba(255,184,0,0.08), transparent);"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="portfolio-overlay">
                 <h4>Personal Portfolio Website</h4>
                 <p>Web · GitHub Pages</p>
                 <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/portofolio.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Portfolio">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
                   <a href="https://najwansv.github.io/Portfolio/" target="_blank" title="Live Site">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- App: Spotify Clone -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/Spotipayimg.png" alt="Spotify Clone App">
-              <div class="portfolio-overlay">
-                <h4>Personal App — Spotify Clone</h4>
-                <p>App · Android</p>
-                <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/Spotipayimg.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Spotify Clone">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
-                  <a href="https://github.com/najwansv/BirdDay" target="_blank" title="GitHub">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video: Short Movie LCS -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-video">
-            <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/maxresdefault.jpg" alt="Short Movie LCS">
-              <div class="portfolio-overlay">
-                <h4>Short Movie — LCS</h4>
-                <p>Video · Film Production</p>
-                <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/maxresdefault.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Short Movie LCS">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
-                  <a href="https://youtu.be/Cnp9rNR1PQA" target="_blank" title="Watch on YouTube">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   </a>
                 </div>
@@ -596,16 +940,65 @@
           <!-- Web: PHP Data Collection -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap tilt-card">
-              <img src="assets/img/portfolio/ProjectPHP.png" alt="PHP Data Collection">
+              <div class="portfolio-mock portfolio-mock--green">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--green">PHP · MySQL</span>
+                  <span class="mock-badge mock-badge--cyan">BOOTSTRAP 5</span>
+                </div>
+                <div style="position:absolute; top:36px; left:14px; right:14px; bottom:36px;" class="mock-table">
+                  <div class="mock-table-row mock-table-row--header">
+                    <span>ID</span><span>Name</span><span>Status</span>
+                  </div>
+                  <div class="mock-table-row"><span>#001</span><span>DATA-A</span><span class="mock-table-cell-chip">OK</span></div>
+                  <div class="mock-table-row"><span>#002</span><span>DATA-B</span><span class="mock-table-cell-chip">OK</span></div>
+                  <div class="mock-table-row"><span>#003</span><span>DATA-C</span><span class="mock-table-cell-chip">OK</span></div>
+                  <div class="mock-table-row"><span>#004</span><span>DATA-D</span><span class="mock-table-cell-chip">OK</span></div>
+                  <div class="mock-table-row"><span>#005</span><span>DATA-E</span><span class="mock-table-cell-chip">OK</span></div>
+                </div>
+              </div>
               <div class="portfolio-overlay">
-                <h4>Data Collection Web — Bootstrap &amp; PHP</h4>
+                <h4>Data Collection Web — PHP + Bootstrap</h4>
                 <p>Web · Full Stack</p>
                 <div class="portfolio-actions">
-                  <a href="assets/img/portfolio/ProjectPHP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Project">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </a>
                   <a href="https://github.com/fatihnzrdn/charlie" target="_blank" title="GitHub">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App: Autodesk Revit BIM Automation -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap tilt-card">
+              <div class="portfolio-mock portfolio-mock--amber">
+                <div class="mock-grid"></div>
+                <div class="mock-gradient-blur"></div>
+                <div class="mock-topbar">
+                  <span class="mock-badge mock-badge--amber">AUTODESK REVIT</span>
+                  <span class="mock-badge mock-badge--cyan">DYNAMO · C#</span>
+                </div>
+                <svg class="mock-3d" viewBox="0 0 100 100">
+                  <path d="M10 30 L50 10 L90 30 L50 50 Z"/>
+                  <path d="M10 30 L10 70 L50 90 L50 50 Z"/>
+                  <path d="M90 30 L90 70 L50 90 L50 50 Z"/>
+                  <path d="M25 40 L45 30 L45 50 L25 60 Z" fill="rgba(255,184,0,0.15)"/>
+                  <path d="M55 30 L75 40 L75 60 L55 50 Z" fill="rgba(255,184,0,0.15)"/>
+                </svg>
+                <div class="mock-panel" style="bottom: 14px; left: 14px; right: 14px;">
+                  <div class="mock-panel-row"><span>WALLS</span><span class="v v--amber">248</span></div>
+                  <div class="mock-panel-row"><span>SAFETY EQP.</span><span class="v v--green">$12,480</span></div>
+                  <div class="mock-panel-row"><span>EFFICIENCY</span><span class="v v--amber">+80%</span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <h4>Autodesk Revit Automation Plugin</h4>
+                <p>App · PT Adhi Karya</p>
+                <div class="portfolio-actions">
+                  <a title="Custom Revit plugin (C# + Dynamo) for QHSE cost calculation and safety-equipment visualization. Cut BIM Modeller and QHSE team time by up to 80%.">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </a>
                 </div>
               </div>
